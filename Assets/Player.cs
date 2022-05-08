@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     public Text ScoreText;
     private int Score;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +17,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += new Vector3(0.3f, 0, 0);
+        if (Input.GetKey(KeyCode.D))//もしDキーが押されたら
+        { 
+            transform.position += new Vector3(0.3f, 0, 0);//プレイヤーのX座標を0.3ずつ変える
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))//もしAキーが押されたら
         {
-            transform.position += new Vector3(-0.3f, 0, 0);
+            transform.position += new Vector3(-0.3f, 0, 0);//プレイヤーのX座標を-0.3ずつ変える
         }
         ScoreText.text = Score.ToString();
     }
@@ -39,6 +39,11 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Falls2")
         {
             Score += 100;
+        }
+
+        if (collision.gameObject.tag == "Falls3")
+        {
+            Score += 300;
         }
     }
 }

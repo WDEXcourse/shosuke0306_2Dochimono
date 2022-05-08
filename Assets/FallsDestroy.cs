@@ -18,10 +18,8 @@ public class FallsDestroy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("a");
         if (collision.gameObject.tag == "Takarabako")
         {
-            Debug.Log("b");
             Destroy(gameObject, 0.1f);
         }
     }
