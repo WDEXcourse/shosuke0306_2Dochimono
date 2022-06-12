@@ -8,6 +8,7 @@ TagManager:
   - Falls1
   - Falls2
   - Falls3
+  - GameFinish
   layers:
   - Default
   - TransparentFX
