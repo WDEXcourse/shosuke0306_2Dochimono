@@ -20,7 +20,7 @@ public class Falls : MonoBehaviour
 
     void Falling()
     {
-        int x = Random.Range(-8, 8);
+        int x = Random.Range(-17, -2);
         Instantiate(falls.gameObject, new Vector3(x, 4f, 0f), Quaternion.identity);
     }
 }
