@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0a09d7b1a35334f87874c176ee236235
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - JF Dot Kappa 20
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 200975fe28e3d4d05aa89020fafb81fc, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

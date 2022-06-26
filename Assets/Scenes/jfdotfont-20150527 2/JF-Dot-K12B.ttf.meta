@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a64114fe4b74a43fa9bc3552435eb5b7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - JF Dot K12
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5066e92188e5b47169a237e79a60a7fe, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
