@@ -6,6 +6,7 @@ public class Music : MonoBehaviour
 {
     AudioSource audioSource;
     public AudioClip SE1;
+    public AudioClip SE2;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,16 @@ public class Music : MonoBehaviour
         if (collision.gameObject.tag == "Falls2")
         {
             audioSource.PlayOneShot(SE1);
+        }
+
+        if (collision.gameObject.tag == "Falls3")
+        {
+            audioSource.PlayOneShot(SE1);
+        }
+
+        if (collision.gameObject.tag == "Falls1")
+        {
+            audioSource.PlayOneShot(SE2);
         }
     }
 }

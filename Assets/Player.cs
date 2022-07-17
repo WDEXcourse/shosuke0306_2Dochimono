@@ -6,11 +6,13 @@ public class Player : MonoBehaviour
 {
     public Text ScoreText;
     public static int Score;
+    public static int highScore;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        Score = 0;
+        highScore = PlayerPrefs.GetInt("Score", 0);
     }
 
     // Update is called once per frame
@@ -30,19 +32,26 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Falls1")
+        if(collision.gameObject.tag == "Falls1")
         {
             Score -= 500;
         }
 
-        if (collision.gameObject.tag == "Falls2")
+        if(collision.gameObject.tag == "Falls2")
         {
             Score += 100;
         }
 
-        if (collision.gameObject.tag == "Falls3")
+        if(collision.gameObject.tag == "Falls3")
         {
             Score += 300;
+        }
+
+        if(highScore < Score)
+        {
+            highScore = Score;
+            PlayerPrefs.SetInt("Score", highScore);
+            PlayerPrefs.Save();
         }
 
         
