@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class highscore : MonoBehaviour
 {
     public Text highScoreText;
@@ -12,7 +11,7 @@ public class highscore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        highScoreText.text = "HighScore:" + Player.highScore.ToString();
+        highScoreText.text = "Score:" + Player.highScore.ToString();
     }
 
     // Update is called once per frame
